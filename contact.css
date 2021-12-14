@@ -1,0 +1,262 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Rubik', Arial, Helvetica, sans-serif;
+}
+
+body{
+    overflow-x: hidden;
+
+}
+
+.menu{
+    background-color: chocolate;
+    height: 75px;
+    width: 100vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 3px solid white;
+    box-shadow: 5px 0 14px rgba(0, 0, 0, .6);
+}
+
+.logo{
+    color: white;
+    font-size: 35px;
+    padding: 0 80px;
+    font-weight: bold;
+}
+
+.menu_items{
+    display: flex;
+    list-style: none;
+    margin-right: 30px;
+}
+
+.menu_items li{
+    border-radius: 3px;
+    margin: 0 5px;
+}
+
+.menu_items li a{
+    padding: 7px 13px;
+    text-decoration: none;
+    font-size: 18px;
+    display: block;
+    text-transform: uppercase;
+    color: white;
+}
+
+.menu_items li:hover, li.active{
+    background-color: coral;
+    transition: .4s;
+}
+
+.menu li i {
+    padding: 5px;
+}
+
+.btn_menu{
+    margin-right: 10px;
+    font-size: 25px;
+    color: white;
+    cursor: pointer;
+    display: none;
+}
+
+ul.show{
+    top: 65px;
+}
+
+.imagen-fondo {
+    height: 400px;
+    min-height: 400px;
+    justify-content: center;
+    background: url(https://st.depositphotos.com/1005738/1395/i/600/depositphotos_13953266-stock-photo-contact-us-keyboard-key-website.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.contact{
+    padding: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.contact .content{
+    max-width: 800px;
+}
+
+
+.contact .content h2{
+    font-size: 36px;
+    font-weight: 500;
+    color: coral;
+}
+
+.contact .content p{
+    font-weight: 300;
+}
+
+.container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.container .contactInfo{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+
+.container .contactInfo .box{
+    padding: 20px 0;
+}
+
+.container .contactInfo .box .icon{
+    width: 60px;
+    height: 60px;
+    background: chocolate;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    font-size: 22px;
+    margin: 0;
+    padding: 0;
+}
+
+.container .contactInfo .box .text{
+    display: flex;
+    margin-left: 20px;
+    font-size: 16px;
+    flex-direction: column;
+    font-weight: 300;
+}
+
+.container .contactInfo .box h3{
+    font-weight: 500;
+    color: coral;
+    display: flex;
+}
+
+.contactForm{
+    color: #000;
+    background: white;
+    padding: 20px;
+    margin: 5px;
+    border-radius: 3px;
+}
+
+.contactForm h2{
+    font-size: 30px;
+    color: #333;
+}
+
+.contactForm .inputBox input,
+.contactForm .inputBox textarea{
+    width: 100%;
+    padding: 5px 0;
+    font-size: 16px;
+    margin: 10px 0;
+    border: none;
+    border-bottom: 1px solid coral;
+    outline: none;
+    resize: none;
+}
+
+.contactForm .inputBox{
+    width: 100%;
+    margin-top: 10px;
+}
+
+.contactForm form{
+    background: white;
+}
+
+.contactForm .inputBox button{
+    width: 100px;
+    background: chocolate;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    font-size: 18px;
+    border-radius: 3px;
+}
+
+.contactForm .inputBox button:hover{
+    background: rgba(210, 105, 30, 0.678);
+}
+
+footer{
+    background-color: chocolate;
+    padding: 10px;
+    text-align: center;
+}
+
+footer a{
+    color: black;
+    text-decoration: none;
+}
+
+@media screen and (min-width:200px) and (max-width:1000px) {
+    .logo{
+        font-size: 30px;
+        padding-left: 35px;
+    }
+    .menu_items li a{
+        font-size: 16px;
+    }
+    .menu{
+        height: 65px;
+    }
+    .btn_menu{
+        display: inline-flex;
+        padding-right: 20px;
+    }
+    .menu_items {
+        position: fixed;
+        width: 100vw;
+        height: calc(100% - 65px);
+        background: rgba(126, 126, 126, 0.6);
+        top: -100vh;
+        text-align: center;
+        transition: all .4s;
+        flex-direction: column;
+    }
+    .menu_items li{
+        margin: 30px 0 0 0;
+        line-height: 30px;
+    }
+    .menu_items li:hover{
+        background: none;
+    }
+    .menu_items li a{
+        font-size: 20px;
+        color: white;
+        font-weight: bold;
+    }
+    .menu_items li a:hover{
+        color: chocolate;
+    }
+    .logo{
+        font-size: 25px;
+        padding-left: 35px;
+    }
+    .menu_items li{
+        margin: 5px 0 0 0;
+    }
+    .menu_items{
+        overflow: scroll;
+        height: calc(100% - 65px);
+    }
+    .box{
+        display: block;
+    }
+}
